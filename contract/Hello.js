@@ -3,7 +3,7 @@ class Hello {
     storage.put("msg", "hello");
   }
   /**
-   * 
+   * if this function returns true, you can update smart contract
    * @param {string} data 
    * @returns {boolean}
    */
@@ -12,19 +12,18 @@ class Hello {
     return true;
   }
   /**
-   * 
+   * returns hello message
    * @returns {string}
    */
   hello() {
-    const msg = storage.get("msg");
     return `${msg}, ${tx.publisher}!`;
   }
   /**
-   * 
+   * change hello message
    * @param {string} msg 
    */
   changeMsg(msg) {
-    // this._onlyOwner();
+    this._onlyOwner();
     storage.put("msg", msg);
   }
   _onlyOwner() {
