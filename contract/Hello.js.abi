@@ -17,7 +17,7 @@
             "description": ""
         },
         {
-            "name": "changeMsg",
+            "name": "change",
             "args": [
                 "string"
             ],

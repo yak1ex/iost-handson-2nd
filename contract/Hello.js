@@ -22,7 +22,7 @@ class Hello {
    * change hello message
    * @param {string} msg 
    */
-  changeMsg(msg) {
+  change(msg) {
     this._onlyOwner();
     storage.put("msg", msg);
   }

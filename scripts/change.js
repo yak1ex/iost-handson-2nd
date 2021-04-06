@@ -18,7 +18,7 @@ const account = new IOST.Account(id);
 const kp = new IOST.KeyPair.Ed25519(IOST.Bs58.decode(secret_key));
 account.addKeyPair("active", kp);
 iost.setPublisher(account);
-const tx = iost.call(address, "changeMsg", [msg]);
+const tx = iost.call(address, "change", [msg]);
 
 const handler = iost.signAndSend(tx);
 handler.listen({ irreversible: true });
