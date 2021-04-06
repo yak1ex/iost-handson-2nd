@@ -16,6 +16,7 @@ class Hello {
    * @returns {string}
    */
   hello() {
+    // add msg getter here
     return `${msg}, ${tx.publisher}!`;
   }
   /**
