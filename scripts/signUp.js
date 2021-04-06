@@ -28,7 +28,6 @@ iost.contract.token.transfer('iost', account.id, id, 50000, "initial transfer", 
 
 const handler = iost.signAndSend(tx, true);
 handler.listen({ irreversible: true });
-handler.onPending(console.log);
 handler.onSuccess(res => {
   fs.writeFileSync("config/account.json", JSON.stringify({
     admin: admin,
