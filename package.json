@@ -6,7 +6,7 @@
   "scripts": {
     "publish": "node scripts/publish",
     "update": "node scripts/update",
-    "create": "node scripts/create",
+    "signUp": "node scripts/signUp",
     "ram": "node scripts/ram",
     "gas": "node scripts/gas",
     "balance": "node scripts/balance",
